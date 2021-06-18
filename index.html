@@ -1,113 +1,85 @@
-
-/* #WEB SURAJ# */
-
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Owl demo</title>
-	<link rel="stylesheet" type="text/css" href="owl.carousel.css">
-	<style>
-		.parent-box{
-			background-color: #ddd;
-			display: flex;
-		}
-		.box{
-			height: 300px;
-			background-color: orange;
-			margin: 10px;
-		}
-		.owl-carousel .owl-nav button.owl-prev{
-    	background: none;
-    	color: inherit;
-    	border: none;
-    	padding: 0 !important;
-    	font: inherit;
-    	position: absolute;
-    	top: 50%;
-    	transform: translateY(-50%);
-    	width: 50px;
-    	height: 50px;
-    	border-radius: 50%;
-    	background-color: green;
-}
 
-/* #WEB SURAJ# */
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		 .owl-carousel .owl-nav button.owl-next{
-		background: none;
-    	color: inherit;
-    	border: none;
-    	padding: 0 !important;
-    	font: inherit;	
-    	position: absolute;
-    	top: 50%;
-    	transform: translateY(-50%);
-    	right: 0;
-    	width: 50px;
-    	height: 50px;
-    	border-radius: 50%;
-    	background-color: green;
-		 }
-	</style>
+    <title>Freebie: 4 Bootstrap Gallery Templates</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-grid.css">
+
+
 </head>
 <body>
-/* #WEB SURAJ# */
 
-	<div class="parent-box owl-carousel">
-		<div class="box">
-			<iframe width="320" height="300" src="https://www.youtube.com/embed/q2M94LsNZY8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-		<div class="box">
-			2
-		</div>
-		<div class="box">
-			3
-		</div>
-		<div class="box">
-			4
-		</div>
-		<div class="box">
-			5
-		</div>
-		<div class="box">
-			6
-		</div>
-		
-	</div>
+<div class="container gallery-container">
 
-	<script src="jquery.js"></script>
-	<script src="owl.carousel.js"></script>
-	<script>
-		$('.owl-carousel').owlCarousel({
-			loop:true,
-			margin:10,
-			nav:true,
-			items:4,
-			autoplay:true,
-			autoplayTimeout:6000,
-			responsive : {
-				0 : {
-					items:1
-				},
+    <h1>Bootstrap 3 Gallery</h1>
 
-				480 : {
-					items:2
-				},
+    <p class="page-description text-center">Grid Layout With Zoom Effect</p>
+    
+    <div class="tz-gallery">
 
-				768 : {
-					items:3
-				},
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/park.jpg">
+                    <img src="../images/park.jpg" alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/bridge.jpg">
+                    <img src="../images/bridge.jpg" alt="Bridge">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="../images/tunnel.jpg">
+                    <img src="../images/tunnel.jpg" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/coast.jpg">
+                    <img src="../images/coast.jpg" alt="Coast">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/rails.jpg">
+                    <img src="../images/rails.jpg" alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/traffic.jpg">
+                    <img src="../images/traffic.jpg" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/rocks.jpg">
+                    <img src="../images/rocks.jpg" alt="Rocks">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/benches.jpg">
+                    <img src="../images/benches.jpg" alt="Benches">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/sky.jpg">
+                    <img src="../images/sky.jpg" alt="Sky">
+                </a>
+            </div>
+        </div>
 
-				992 : {
-					items:4
-				}
+    </div>
 
+</div>
 
-			}
-			});
-	</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
 </body>
 </html>
-
-/* #WEB SURAJ# */
